@@ -1,6 +1,7 @@
 # RateComponent
 The `Rate` component is a react resuable component for implementing Rating system
 
+## Features
 Hover Effect: Highlights the current item and all previous items when hovered.
 
 Click Selection: Allows users to permanently mark a rating by clicking an item.
