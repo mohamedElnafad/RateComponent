@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Rate from './components/Stars.tsx';
+import Rate from './components/Rate.tsx';
 
 export const App = () => {
   return (

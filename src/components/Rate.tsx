@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './start.css'; // Optional for styling
+import './rate.css';
 
 const Rate = ({ totalItems = 5 }) => {
   const [hoverIndex, setHoverIndex] = useState(null);
