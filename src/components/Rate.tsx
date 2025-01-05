@@ -18,10 +18,22 @@ const Rate = ({ totalItems = 5 }) => {
   };
 
   const handleTabKey = (event: any) => {
-    if (event.key === 'Tab') {
-      setSelectedIndex((prev: number) => prev + 1);
+    switch (event.key) {
+      case 'Enter': {
+        setSelectedIndex(selectedIndex);
+        event.preventDefault();
+        break;
+      }
+      case 'Tab': {
+        setSelectedIndex((prev: number) => prev + 1);
+        break;
+      }
+      default: {
+        return;
+      }
     }
   };
+
   return (
     <div className='rate-container'>
       {Array.from({ length: totalItems }, (_, index) => (
