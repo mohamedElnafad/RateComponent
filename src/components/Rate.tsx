@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './rate.css';
+import styles from './rate.module.css';
 
 const Rate = ({ totalItems = 5 }) => {
   const [hoverIndex, setHoverIndex] = useState(null);
@@ -35,15 +35,15 @@ const Rate = ({ totalItems = 5 }) => {
   };
 
   return (
-    <div className='rate-container'>
+    <div className={styles.rateContainer}>
       {Array.from({ length: totalItems }, (_, index) => (
         <button
           key={index}
-          className={`rate-item ${
+          className={`${styles.rateItem} ${
             hoverIndex !== null && index <= hoverIndex
-              ? 'hovered'
+              ? styles.hovered
               : selectedIndex !== null && index <= selectedIndex
-              ? 'selected'
+              ? styles.selected
               : ''
           }`}
           onMouseEnter={() => handleMouseEnter(index)}

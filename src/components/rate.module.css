@@ -1,19 +1,19 @@
-.rate-container {
+.rateContainer {
   display: flex;
   gap: 8px;
   cursor: pointer;
 }
 
-.rate-item {
+.rateItem {
   font-size: 24px;
   color: gray;
   transition: color 0.3s ease;
 }
 
-.rate-item.hovered {
+.rateItem.hovered {
   color: gold;
 }
 
-.rate-item.selected {
+.rateItem.selected {
   color: gold;
 }
